@@ -18,6 +18,6 @@ Route::group(['middleware' => ['auth:sanctum']],function () {
 
     /** ----------SLEEP---------- */
     Route::post('sleep', [SleepController::class, 'index']);
-    Route::post('sleep/add', [SleepController::class, 'index']);
+    Route::post('sleep/add', [SleepController::class, 'add']);
 
 });
